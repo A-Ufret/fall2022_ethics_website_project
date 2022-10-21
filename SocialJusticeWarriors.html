@@ -85,21 +85,25 @@
       
    <br>
    <hr>
-  <form>
+<form method="POST" action="https://script.google.com/macros/s/AKfycbwUeGJkhb3JsyfYTmCUoRnZ84MbQJL26idKnC3tdcW8dk3V_FzrfRe_J4E1O4VQvQFCYw/exec">
     <h4>
   Complete this form to join our mailing list and learn about upcoming sessions!
        </h4>
      <br>
-  <text> First Name: </text><input>
+  <input name="First Name" type="text" placeholder="First Name" required>
     <br>
-    <text> Last Name: </text><input>
+  <input name="Last Name" type="text" placeholder="Last Name" required>
      <br>
-    <email>Email: &emsp; </text><input>
+   <input name="Email" type="email" placeholder="Email" required>
      <br>
-    <button> submit&emsp; &emsp; </button>
+     <button type="submit">Send</button>
   </form>
-   <br>
-  <hr>
+      <br>
+      <hr>
+  <form action="<my-app-script-endpoint>" method="post" id="my-form">
+      <label>Example Field: <input type="text" name="Example Header" required /></label>
+      <input type="submit" value="Submit" />
+  </form>
 <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
